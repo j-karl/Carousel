@@ -1,0 +1,142 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
+}
+
+@font-face {
+  font-family: 'zuoyou';
+  src: url("../fonts/iconfont.woff") format("woff");
+}
+
+.box {
+  width: 100%;
+  height: 100vh;
+  list-style: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  overflow: hidden;
+}
+
+.box .carsousel {
+  width: 100%;
+  height: 100%;
+}
+
+.box .carsousel li {
+  width: 100%;
+  height: 100%;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+  transition: all 0.8s ease;
+}
+
+.box .carsousel li.active {
+  display: block;
+  transform: translateX(0);
+}
+
+.box .carsousel li.left {
+  display: block;
+  transform: translateX(-100%);
+}
+
+.box .carsousel li.right {
+  display: block;
+  transform: translateX(100%);
+}
+
+.box .carsousel li.up {
+  display: block;
+  transform: translateY(-100%);
+}
+
+.box .carsousel li.down {
+  display: block;
+  transform: translateY(100%);
+}
+
+.box .carsousel .d1 {
+  background-image: url("../img/a.jpg");
+}
+
+.box .carsousel .d2 {
+  background-image: url("../img/b.jpg");
+}
+
+.box .carsousel .d3 {
+  background-image: url("../img/c.jpg");
+}
+
+.box .carsousel .d4 {
+  background-image: url("../img/d.jpg");
+}
+
+.box .indicator {
+  width: 120px;
+  height: 30px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 30px;
+}
+
+.box .indicator li {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #A5A03F;
+  float: left;
+  margin: 5px 5px;
+}
+
+.box .indicator li.active {
+  box-shadow: 0 0 2px 2px #F6F3B8;
+}
+
+.box .btnL, .box .btnR {
+  width: 50px;
+  height: 120px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.box .btnL {
+  left: 0;
+}
+
+.box .btnR {
+  right: 0;
+}
+
+.box .iconfont {
+  font-family: "zuoyou" !important;
+  font-size: 80px;
+  font-style: normal;
+  text-align: center;
+  color: #A8A8A8;
+  margin-right: 25px;
+}
+
+.box .iconfont:hover {
+  color: #969696;
+}
+
+.box .icon-youjiantou:before {
+  content: "\e60a";
+}
+
+.box .icon-youjiantou1:before {
+  content: "\e603";
+}
